@@ -1,0 +1,315 @@
+@import "tailwindcss";
+:root {
+  --primary_color:rgb(201, 249,124);
+  --secondary_color:rgb(4,10,49);
+}
+
+/* utility */
+
+.container-section{
+ padding-inline:100px !important;
+ width: 100%;
+}
+
+.section {
+  padding: 80px 0px;
+}
+.home-section {
+  background-color: var(--primary_color);
+}
+
+.contain {
+  padding-block: 60px;
+}
+
+.hero_title {
+   font-size: 3.5rem;
+   line-height: 24px;
+   font-weight: 900;
+}
+
+.header_title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.primary_title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.heading_title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.secondary_title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.page_title {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.primary_button {
+  background-color: var(--secondary_color) !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 16px !important;
+  padding: 10px 32px !important;
+  text-transform: none !important;
+  letter-spacing: 0.8px !important;
+  border-radius: 6px !important;
+  width: fit-content !important;
+
+}
+.secondary_button {
+  background-color: var(--primary_color) !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 16px !important;
+  padding: 10px 32px !important;
+  text-transform: none !important;
+  letter-spacing: 0.8px !important;
+  border-radius: 6px !important;
+  width: fit-content !important;
+}
+
+.secondary_button:hover {
+  background-color: rgb(211, 248, 157) !important
+}
+/* header */
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 4px -2px 6px 3px #cbcaca;
+  padding: 15px 100px ;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+  cursor: pointer;
+}
+
+.logo{
+  position: relative;
+  width:120px;
+  height:50px;
+}
+
+
+
+.logoImage {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* Gallery */
+
+.gallery {
+   background-color: var(--secondary_color);
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 300px;
+}
+
+.gallery-image {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap:30px
+}
+
+.image-show {
+  position: relative;
+  height:340px;
+  width: 100%;
+  background-color: #d2d2d2;
+}
+
+.image-show img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-shows {
+  position: relative;
+  height:696px;
+  width: 100%;
+  background-color: #d2d2d2;
+}
+
+.image-shows img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* home */
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.pivot {
+   background-color: var(--secondary_color);
+   border-radius: 24px;
+   padding: 6px 24px;
+   color: #fff;
+   width: fit-content;
+   font-size: 20px;
+}
+
+.container-section:first-of-type {
+  padding: 0px 0px 0px 100px !important;
+}
+
+
+@media screen and (max-width:768px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
+}
+
+
+/* Contact */
+
+.contact {
+  background-color: rgb(242, 255, 222);
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  grid-gap:24px;
+  align-items: center;
+  padding: 80px;
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+  display:flex;
+  justify-content: space-between;
+  padding: 40px 30px;
+  background-color: var(--secondary_color);
+   border-bottom: 1px solid rgb(101,249,250);
+}
+
+.social {
+   display: flex;
+   grid-gap: 18px;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+.coaching {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 6px;
+
+}
+.coaching h2 {
+   color: rgb(101,249,250);
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.coaching a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 6px;
+
+}
+.links h2 {
+   color: rgb(101,249,250);
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.links a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 6px;
+
+}
+.contact-us h2 {
+   color: rgb(101,249,250);
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.contact-us a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.coaching a:hover {
+  color: var(--primary_color);
+  text-decoration: underline 1px solid var(--primary_color);
+}
+
+.links a:hover {
+  color: var(--primary_color);
+  text-decoration: underline 1px solid var(--primary_color);
+}
+
+.contact-us a:hover {
+  color: var(--primary_color);
+  text-decoration: underline 1px solid var(--primary_color);
+}
+
+.secondary_footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 20px 30px;
+
+}
+.reserved
+{
+   color: #fff;
+   font-size: 14px;
+}
+
+.terms {
+  color: #fff;
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+}
+
+
