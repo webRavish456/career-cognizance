@@ -5,31 +5,31 @@ import Image from "next/image";
 
 export default function Home() {
   const features = [
-  {
-    icon: "🏠",
-    title: "Personalized Approach",
-    description:
-      "We understand that every individual is unique, which is why we tailor our coaching services to meet the specific needs and goals of each client.",
-  },
-  {
-    icon: "🔑",
-    title: "Expert Guidance",
-    description:
-      "Our team of experienced coaches brings a wealth of knowledge and expertise in career development, work-life balance, and personal growth to help clients overcome challenges and achieve success.",
-  },
-  {
-    icon: "🎧",
-    title: "Holistic Support",
-    description:
-      "We believe in taking a holistic approach to coaching, addressing not only career-related goals but also supporting clients in cultivating a healthy mindset, resilience, and overall well-being.",
-  },
-  {
-    icon: "📍",
-    title: "Results-Oriented",
-    description:
-      "Our coaching programs are designed to deliver tangible results, empowering clients to take action, overcome obstacles, and reach their full potential.",
-  },
-];
+    {
+      icon: "🏠",
+      title: "Personalized Approach",
+      description:
+        "We understand that every individual is unique, which is why we tailor our coaching services to meet the specific needs and goals of each client.",
+    },
+    {
+      icon: "🔑",
+      title: "Expert Guidance",
+      description:
+        "Our team of experienced coaches brings a wealth of knowledge and expertise in career development, work-life balance, and personal growth to help clients overcome challenges and achieve success.",
+    },
+    {
+      icon: "🎧",
+      title: "Holistic Support",
+      description:
+        "We believe in taking a holistic approach to coaching, addressing not only career-related goals but also supporting clients in cultivating a healthy mindset, resilience, and overall well-being.",
+    },
+    {
+      icon: "📍",
+      title: "Results-Oriented",
+      description:
+        "Our coaching programs are designed to deliver tangible results, empowering clients to take action, overcome obstacles, and reach their full potential.",
+    },
+  ];
 
 
   // Example company logos (Replace with actual image paths)
@@ -228,7 +228,7 @@ export default function Home() {
                   alt="Live sessions "
                   style={{ width: "40px", height: "40px", objectFit: "contain" }}
                 />
-               Live Sessions & Recordings
+                Live Sessions & Recordings
               </div>
             </Card>
           </Grid>
@@ -359,7 +359,7 @@ export default function Home() {
                   alt="Live sessions "
                   style={{ width: "40px", height: "40px", objectFit: "contain" }}
                 />
-               Live Sessions & Recordings
+                Live Sessions & Recordings
               </div>
             </Card>
           </Grid>
@@ -467,135 +467,137 @@ export default function Home() {
         </Grid>
       </div>
 
-<div style={{ textAlign: "center", padding: "4rem 1rem", backgroundColor: "#f2f1fe" }}>
-  <h6 className="hero_title" style={{ marginBottom: 50, color: "var(--secondary_color)", fontWeight: 500 }}>
-    Why Choose our Professional Coaching Services?
-  </h6>
+      <div style={{ textAlign: "center", padding: "4rem 1rem", backgroundColor: "#f2f1fe" }}>
+        <h6 className="hero_title" style={{ marginBottom: 50, color: "var(--secondary_color)", fontWeight: 500 }}>
+          Why Choose our Professional Coaching Services?
+        </h6>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-    {features.map((feature, index) => (
-      <div
-        key={index}
-        className="flex flex-col gap-2 p-10 bg-white rounded-lg shadow-sm border border-gray-300 items-start"
-        style={{ maxWidth: "1000px", // Adjust this value to expand the width
-      width: "100%"}} 
-      >
-        {/* Feature Icon (Smaller & Left-Aligned) */}
-        <div
-          className="flex items-center justify-center w-16 h-16 text-xl rounded-md"
-          style={{ backgroundColor: "var(--primary_color)", marginLeft: "0" }}
-        >
-          {feature.icon}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-2 p-10 bg-white rounded-lg shadow-sm border border-gray-300 items-start"
+              style={{
+                maxWidth: "1000px", // Adjust this value to expand the width
+                width: "100%"
+              }}
+            >
+              {/* Feature Icon (Smaller & Left-Aligned) */}
+              <div
+                className="flex items-center justify-center w-16 h-16 text-xl rounded-md"
+                style={{ backgroundColor: "var(--primary_color)", marginLeft: "0" }}
+              >
+                {feature.icon}
+              </div>
+
+              {/* Title (Next Line, Left-Aligned) */}
+              <h3
+                className="text-md font-bold mb-1"
+                style={{ color: "var(--secondary_color)", fontSize: "1.8rem", textAlign: "left", marginLeft: "0" }}
+              >
+                {feature.title}
+              </h3>
+
+              {/* Description (Next Line, Left-Aligned) */}
+              <p
+                className="text-gray-600"
+                style={{ fontSize: "1.4rem", textAlign: "left", marginLeft: "0" }}
+              >
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
-
-        {/* Title (Next Line, Left-Aligned) */}
-        <h3
-          className="text-md font-bold mb-1"
-          style={{ color: "var(--secondary_color)", fontSize: "1.8rem", textAlign: "left", marginLeft: "0" }}
-        >
-          {feature.title}
-        </h3>
-
-        {/* Description (Next Line, Left-Aligned) */}
-        <p
-          className="text-gray-600"
-          style={{ fontSize: "1.4rem", textAlign: "left", marginLeft: "0" }}
-        >
-          {feature.description}
-        </p>
       </div>
-    ))}
-  </div>
-</div>
-<div style={{ textAlign: "center", padding: "4rem 1rem" }}>
-  <h6
-    className="hero_title"
-    style={{ marginBottom: 50, color: 'var(--secondary_color)', fontWeight: 700 }}
-  >
-    Social Proof
-  </h6>
-  <h6
-    className="heading_title"
-    style={{ marginBottom: 50, color: 'var(--secondary_color)', fontWeight: 500 }}
-  >
-    Check out few of the success stories and feedback from people we have worked with
-  </h6>
+      <div style={{ textAlign: "center", padding: "4rem 1rem" }}>
+        <h6
+          className="hero_title"
+          style={{ marginBottom: 50, color: 'var(--secondary_color)', fontWeight: 700 }}
+        >
+          Social Proof
+        </h6>
+        <h6
+          className="heading_title"
+          style={{ marginBottom: 50, color: 'var(--secondary_color)', fontWeight: 500 }}
+        >
+          Check out few of the success stories and feedback from people we have worked with
+        </h6>
 
-  {/* Social Proof Cards */}
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-      gap: "1.5rem",
-      maxWidth: "1200px",
-      margin: "0 auto",
-    }}
-  >
-    {/* Image Card 1 */}
-    <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
-  <iframe
-    src="https://www.instagram.com/p/careercognizance/embed"
-    width="100%"
-    height="400"
-    style={{  width:"100%", height:"550px", border: 0, borderRadius: "8px", marginBottom: "0.75rem" }}
-    allow="encrypted-media"
-    title="Instagram post"
-  ></iframe>
-  <p style={{ fontSize: "0.9rem", color: "#333" }}>Individuals from people's program</p>
-</div>
+        {/* Social Proof Cards */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "1.5rem",
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }}
+        >
+          {/* Image Card 1 */}
+          <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
+            <iframe
+              src="https://www.instagram.com/p/careercognizance/embed"
+              width="100%"
+              height="400"
+              style={{ width: "100%", height: "550px", border: 0, borderRadius: "8px", marginBottom: "0.75rem" }}
+              allow="encrypted-media"
+              title="Instagram post"
+            ></iframe>
+            <p style={{ fontSize: "0.9rem", color: "#333" }}>Individuals from people's program</p>
+          </div>
 
-    {/* Video Card */}
-    <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
-      <video controls style={{ width: "100%", borderRadius: "8px", marginBottom: "0.75rem" }}>
-        <source src="/videos/chats.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <p style={{ fontSize: "0.9rem", color: "#333" }}>Insights gained by individuals from our course</p>
-    </div>
+          {/* Video Card */}
+          <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
+            <video controls style={{ width: "100%", borderRadius: "8px", marginBottom: "0.75rem" }}>
+              <source src="/videos/chats.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p style={{ fontSize: "0.9rem", color: "#333" }}>Insights gained by individuals from our course</p>
+          </div>
 
-    {/* Image Card 2 */}
-    <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
-  <iframe
-    src="https://www.instagram.com/p/POST_ID/embed"
-    width="100%"
-    height="400"
-    style={{ width:"100%", height:"550px", border: 0, borderRadius: "8px", marginBottom: "0.75rem" }}
-    allow="encrypted-media"
-    title="Instagram post"
-  ></iframe>
-  <p style={{ fontSize: "0.9rem", color: "#333" }}>Wonder women community's first meet-up</p>
-</div>
+          {/* Image Card 2 */}
+          <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
+            <iframe
+              src="https://www.instagram.com/p/POST_ID/embed"
+              width="100%"
+              height="400"
+              style={{ width: "100%", height: "550px", border: 0, borderRadius: "8px", marginBottom: "0.75rem" }}
+              allow="encrypted-media"
+              title="Instagram post"
+            ></iframe>
+            <p style={{ fontSize: "0.9rem", color: "#333" }}>Wonder women community's first meet-up</p>
+          </div>
 
-    {/* Handwritten Feedback */}
-    <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
-      <img
-        src="/home/handwritten.png"
-        alt="Handwritten Feedback"
-        style={{ width:"100%", height:"550px", borderRadius: "8px", marginBottom: "0.75rem" }}
-      />
-      <p style={{ fontSize: "0.9rem", color: "#333" }}>Advanced abilities acquired and applied</p>
-    </div>
-  </div>
-</div>
+          {/* Handwritten Feedback */}
+          <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
+            <img
+              src="/home/handwritten.png"
+              alt="Handwritten Feedback"
+              style={{ width: "100%", height: "550px", borderRadius: "8px", marginBottom: "0.75rem" }}
+            />
+            <p style={{ fontSize: "0.9rem", color: "#333" }}>Advanced abilities acquired and applied</p>
+          </div>
+        </div>
+      </div>
 
 
-     <div style={{ textAlign: "center", padding: "4rem 1rem"}}>
-      <h6 className="hero_title" style={{ marginBottom: 50, color: 'var(--secondary_color)', fontWeight: 700 }}>
+      <div style={{ textAlign: "center", padding: "4rem 1rem" }}>
+        <h6 className="hero_title" style={{ marginBottom: 50, color: 'var(--secondary_color)', fontWeight: 700 }}>
           Companies Anitha has worked with
         </h6>
 
-      <Grid container spacing={4} justifyContent="center" style={{ maxWidth: "1000px", margin: "auto" }}>
-        {companies.map((company, index) => (
-          <Grid item xs={6} md={4} lg={3} key={index}>
-            <Card style={{ padding: "4px", textAlign: "center" }}>
-              <CardContent>
-                <Image src={company.logo} alt={company.name} width={100} height={100} />
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </div>
+        <Grid container spacing={4} justifyContent="center" style={{ maxWidth: "1000px", margin: "auto" }}>
+          {companies.map((company, index) => (
+            <Grid item xs={6} md={4} lg={3} key={index}>
+              <Card style={{ padding: "4px", textAlign: "center" }}>
+                <CardContent>
+                  <Image src={company.logo} alt={company.name} width={100} height={100} />
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
 
     </>
   );
