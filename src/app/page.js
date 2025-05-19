@@ -536,7 +536,7 @@ export default function Home() {
           {/* Image Card 1 */}
           <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
             <iframe
-              src="https://www.instagram.com/p/careercognizance/embed"
+              src="https://www.instagram.com/p/C35gcioxuRV/embed"
               width="100%"
               height="400"
               style={{ width: "100%", height: "550px", border: 0, borderRadius: "8px", marginBottom: "0.75rem" }}
@@ -558,7 +558,7 @@ export default function Home() {
           {/* Image Card 2 */}
           <div style={{ background: "#e0f2ff", padding: "1rem", borderRadius: "12px" }}>
             <iframe
-              src="https://www.instagram.com/p/POST_ID/embed"
+              src="https://www.instagram.com/p/C0uSzyKyAUB/embed"
               width="100%"
               height="400"
               style={{ width: "100%", height: "550px", border: 0, borderRadius: "8px", marginBottom: "0.75rem" }}
